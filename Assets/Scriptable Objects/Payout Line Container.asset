@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc65253c9cd85e541bef7501c4c31de7, type: 3}
+  m_Name: Payout Line Container
+  m_EditorClassIdentifier: 
+  payoutLines:
+  - {fileID: 11400000, guid: 25ec59e8eea5a174eb0041dbcabc5386, type: 2}
+  - {fileID: 11400000, guid: e341a146b2420d949aa3c76fc4f28b6c, type: 2}
+  - {fileID: 11400000, guid: b08780b1baafae849aa5b1fa3fabf10b, type: 2}
+  - {fileID: 11400000, guid: 9249eddaf49fe3b46afb8d6412540169, type: 2}
+  - {fileID: 11400000, guid: f982c92b5370f7342a15053928879a5b, type: 2}
+  - {fileID: 11400000, guid: 29f627d0a07bd93439e5c06fc3c69c72, type: 2}
+  - {fileID: 11400000, guid: 33a7a14765cae1f408456a78e31b143b, type: 2}
+  - {fileID: 11400000, guid: 3b2b4ed8a58956b4f9340e25c9dcaf7e, type: 2}
+  - {fileID: 11400000, guid: 7b321cac20325474cbc242201dca0ec8, type: 2}
+  - {fileID: 11400000, guid: 92b4803aad827c0438f0420374b0fc92, type: 2}
