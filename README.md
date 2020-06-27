@@ -30,7 +30,7 @@ public class SymbolData : ScriptableObject
 }
 ```
 #### Symbol Container
-This class is scriptable object that merely acts as a list of all my symbols that I can access from any class with ease.
+This class is scriptable object that merely acts as a list of all my symbols that I can access from any class with ease. The container class allows me to put any number of elements without having to update any part of the code that relies on it.
 
 #### Symbol 
 Symbol is a monobehaviour class that makes use of the Symbol Data Class to Initialize itself the information acquired from the Scriptable Object.
@@ -279,3 +279,5 @@ public class SlotMachineUI : MonoBehaviour
 
 }
 ```
+## Build
+[Game Build](https://drive.google.com/file/d/1vQV8o0mvpPaUc5tXtVEp9JcA_zopw2ek/view?usp=sharing)
