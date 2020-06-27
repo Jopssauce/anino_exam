@@ -30,7 +30,7 @@ public class SymbolData : ScriptableObject
 }
 ```
 #### Symbol Container
-This class is scriptable object that merely acts as a list of all my symbols that I can access from any class with ease. The container class allows me to put any number of elements without having to update any part of the code that relies on it.
+This class is a scriptable object that merely acts as a list of all my symbols that I can access from any class with ease. The container class allows me to put any number of elements without having to update any part of the code base that relies on it.
 
 #### Symbol 
 Symbol is a monobehaviour class that makes use of the Symbol Data Class to Initialize itself the information acquired from the Scriptable Object.
@@ -82,7 +82,7 @@ This class is the exact same as the symbols container. It allows me ease of acce
 
 ## Reels
 There are a total of 5 reels with each their own symbols and animations that land on the predetermined results before the spin.
-Reel Data is Initialized using the Initialize function in the class
+Reel Data is Initialized using the Initialize function in the Reel Class
 
 ```
 public void Initialize(int rows, List<SymbolData> symbols)
@@ -125,7 +125,7 @@ public void SetSymbols(SymbolData[] symbols)
 ```
 ## Reel Spin
 For Spinning the Reels and generating the results of the reels I make use of a class called Slot Machine which handles these things for me.
-This function in slot machine populates the 2D array with symbols ID that I can later use with the payout lines to determine the payout.
+This function in slot machine populates the 2D array with symbols' ID that I can later use with the payout lines to determine the payout results.
 ```
 public void PrepareResults()
     {
@@ -150,8 +150,8 @@ Then I have this function the calls on all 5 reels from a list to toggle its spi
     }
 
 ```
-Now going back to the Reels Class this block of code is how I decided to go about animating the spin. I can probably improve this by using something similar to lerp to lock 
-the symbols movement in a timestep but I was spending too much time on this feauture that I've gone for a dirty implementation instead. I also did not have time to solve problems that may occur in screen space, anchored positions etc, which is why the reels are not part of the UI.
+Now going back to the Reel Class this block of code is how I decided to go about animating the spin. I can probably improve this by using something similar to lerp to lock 
+the symbols movement in a timestep but I was spending too much time on this feature that I've gone for a dirty implementation instead. I also did not have time to solve problems that may occur in screen space, anchored positions etc, which is why the reels are not part of the UI.
 ```
 public void Spin()
     {
@@ -188,7 +188,7 @@ public void Spin()
 ```
 ## UI
 Normally I would have the UI in a seperate scene that can be accessed with a singleton but I thought that a singleton would be overkill for this project and decided against it.
-Instead what I've done is go for the traditinal Game Manager Class which contains all the methods that the UI may request from the game.
+Instead what I've done is go for the traditional Game Manager Class which contains all the methods that the UI may request from the game.
 So the Game Manager would have these methods.
 ```
 public void SpinSlotMachine()
